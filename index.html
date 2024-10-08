@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { margin: 0;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+          }
+        }
+    </script>
+</head>
+<body>
+  <div class="group">
+    <form class="form-group">
+      <fieldset id="shape" class="radio-group">
+        <div class="label">
+          <label for="cube">cube</label>
+          <input type="radio" value="BoxGeometry" name="shape">
+        </div>
+        <div class="label">
+          <label for="sphere">sphere</label>
+          <input type="radio" value="SphereGeometry" name="shape">
+        </div>
+        <div class="label">
+          <label for="cone">cone</label>
+          <input type="radio" value="ConeGeometry" name="shape">
+        </div>
+      </fieldset>
+      <fieldset id="color" class="radio-group">
+        <div class="label">
+          <label for="red">red</label>
+          <input type="radio" value="red" name="color">
+        </div>
+        <div class="label">
+          <label for="blue">blue</label>
+          <input type="radio" value="blue" name="color">
+        </div>
+        <div class="label">
+          <label for="yellow">yellow</label>
+          <input type="radio" value="yellow" name="color">
+        </div>
+      </fieldset>
+      <fieldset id="material" class="radio-group">
+        <div class="label">
+          <label for="stone">stone</label>
+          <input type="radio" value="stone" name="material">
+        </div>
+        <div class="label">
+          <label for="iron">iron</label>
+          <input type="radio" value="iron" name="material">
+        </div>
+        <div class="label">
+          <label for="wood">wood</label>
+          <input type="radio" value="wood" name="material">
+        </div>
+      </fieldset>
+    </form>
+    <div id="container" class="container"></div>
+  </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
